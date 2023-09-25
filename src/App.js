@@ -1,17 +1,18 @@
 import './App.css';
 import Pokedex from "./Pokedex";
-import pokemon from './pokemon';
+import Pokegame from './Pokegame';
 
 /** Main component that renders all other components
  * for Pokedex
  */
 
-//TODO: import pokemon seed data to pokedex => make default
 function App() {
   return (
     <div className="App">
-      <h1 className='App-title'>Pokedex</h1>
-      <Pokedex pokemon={pokemon} />
+      <h1>Pokegame!</h1>
+      <Pokegame />
+      {/* <h1 className='App-title'>Pokedex</h1>
+      <Pokedex /> */}
     </div>
   );
 }

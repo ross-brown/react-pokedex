@@ -1,4 +1,20 @@
 .Pokedex {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Pokedex-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.Pokedex-exp {
+  margin-left: 20px;
+}
+
+.Pokedex-winner {
+  margin-left: 20px;
+  color: lightgreen;
+  font-size: 1.75rem;
 }
