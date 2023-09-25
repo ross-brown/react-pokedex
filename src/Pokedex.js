@@ -16,7 +16,7 @@ function Pokedex({ pokemon = pokemonData, totalExp, isWinner }) {
         />)}
       <div className='Pokedex-info'>
         <h1 className='Pokedex-exp'>Total EXP: {totalExp}</h1>
-        {isWinner ? <h2 className='Pokedex-winner'>THIS HAND WINS!</h2> : ""}
+        {isWinner ? <h2 className='Pokedex-winner'>THIS HAND WINS!</h2> : null}
       </div>
     </div>
   );

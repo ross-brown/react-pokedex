@@ -6,6 +6,14 @@
   height: 210px;
   margin: 10px;
   border-radius: 5%;
+  transition: all .2s ease-in-out;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.Pokecard:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: pink
 }
 
 .Pokecard-name {
@@ -20,4 +28,16 @@
 .Pokecard-exp {
   padding: 0;
   margin: 0
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

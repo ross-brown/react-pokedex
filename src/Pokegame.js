@@ -28,14 +28,14 @@ function Pokegame({ pokemon = pokemonData }) {
       <Pokedex
         pokemon={hand1}
         totalExp={exp1}
-        isWinner={exp1 > exp2 ? true : false}
+        isWinner={exp1 > exp2}
       />
       <hr></hr>
       <hr></hr>
       <Pokedex
         pokemon={hand2}
         totalExp={exp2}
-        isWinner={exp2 > exp1 ? true : false}
+        isWinner={exp2 > exp1}
       />
     </div>
   );

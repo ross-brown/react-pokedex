@@ -3,8 +3,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: gray;
 }
 
 .App-title {
-  color: gray
+  color: #F0E68C;
 }
