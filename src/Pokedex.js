@@ -1,8 +1,11 @@
+import './Pokedex.css';
 import Pokecard from "./Pokecard";
+
+/** Displays all pokemon with their information */
 
 function Pokedex({ pokemon }) {
   return (
-    <div>
+    <div className='Pokedex'>
       {pokemon.map(p =>
         <Pokecard
           id={p.id}
