@@ -3,7 +3,14 @@ import './Pokecard.css';
 const POKE_API_BASE_URL =
   "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon";
 
-/** Displays information about the pokemon */
+/** Pokecard: Displays information about the pokemon
+ *
+ * Props:
+ *  - id (number)
+ *  - name
+ *  - type
+ *  - base_experience (number)
+ */
 
 function Pokecard({ id, name, type, base_experience }) {
   return (

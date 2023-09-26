@@ -1,10 +1,15 @@
 import './Pokedex.css';
 import Pokecard from "./Pokecard";
-import pokemonData from './pokemon';
 
-/** Displays all pokemon with their information */
+/** Pokedex: Displays all pokemon with their information
+ *
+ * Props:
+ *  - pokemon (array of pokemon objects)
+ *  - totalExp (number representing all expereince added up in pokedex)
+ *  - isWinner (true/false)
+*/
 
-function Pokedex({ pokemon = pokemonData, totalExp, isWinner }) {
+function Pokedex({ pokemon, totalExp, isWinner }) {
   return (
     <div className='Pokedex'>
       {pokemon.map(p =>

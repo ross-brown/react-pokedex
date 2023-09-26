@@ -10,13 +10,15 @@ import shuffleAndSplit from "./utils";
  */
 
 function calculateTotalExp(hand) {
-  return hand.reduce((acc, curr) => {
-    acc += curr.base_experience;
-    return acc;
-  }, 0);
+  return hand.reduce((exp, pokemon) => exp + pokemon.base_experience, 0);
 }
 
 
+/** Pokegame: renders two random hands of pokemon cards
+ *
+ * Props:
+ *  - pokemon (array of pokemon objects)
+ */
 
 function Pokegame({ pokemon = pokemonData }) {
   const [hand1, hand2] = shuffleAndSplit(pokemon);
