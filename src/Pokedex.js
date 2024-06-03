@@ -15,6 +15,7 @@ function Pokedex({ pokemon, totalExp, isWinner }) {
       {pokemon.map(p =>
         <Pokecard
           id={p.id}
+          key={p.id}
           name={p.name}
           type={p.type}
           base_experience={p.base_experience}
